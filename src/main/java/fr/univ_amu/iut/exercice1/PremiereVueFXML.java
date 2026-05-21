@@ -44,7 +44,7 @@ public class PremiereVueFXML extends Application {
     //
     // 4. Ajouter un titre et show().
 
-    URL fxml = getClass().getResource("PremiereVueFxml.fxml");
+    URL fxml = getClass().getResource("PremiereVueFXML.fxml");
 
     Parent root = FXMLLoader.load(fxml);
 
