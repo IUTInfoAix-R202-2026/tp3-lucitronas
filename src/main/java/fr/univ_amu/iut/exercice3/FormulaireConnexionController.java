@@ -112,11 +112,12 @@ public class FormulaireConnexionController {
     // Exemple : "alice ********" pour identifiant "alice" et mot de passe de 8
     // caractères.
     Text text = new Text();
+    String motDePasse = champMotDePasse.getText();
     for (int i = 0; i < motDePasse.length(); i = i + 1) {
       text.setText(text.getText() + "*");
     }
 
-    labelMessage.setText(champIdentifiant + " " + text);
+    labelMessage.setText(champIdentifiant.getText() + " " + text.getText());
   }
 
   /** Action du bouton Annuler. Vide les deux champs et le label de message. */
